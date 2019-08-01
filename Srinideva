@@ -1,0 +1,77 @@
+package railway;
+import java.util.Scanner;
+public class railway;
+public static void main(String[] args){
+Scanner scan=new Scanner(System.in);
+int x=0;
+String [] dday={"Monday "," Tuesday "," Wednesday "};
+double [] rtime={06.04,09.04,12.04,15.04,19.04};
+int [] [] pn={22,119,64,177,21,22,111,87,193,22,11,107,93,162,42};
+int input=scan.nextInt();
+switch(input)
+{
+case1: System.out.print(" Day      Departure times     Number of passengers travelled ");
+for(int i=0;i<3;i++)
+{
+for (int j=0;j<5;j++)
+{
+for(int k=0:k<5;k++)
+{System. out.print(" "+dday[i]+" "+rtime[j]+" "+pn[j][k]);
+}
+}
+}
+max=pn[0][0];
+min=pn[0][0];
+String d1,d3;
+double d2,d4;
+for (int i=0;i<3;i++)
+{
+for(int j=0;j<5;j++)
+{
+if(max<pn[i][j])
+{
+max=pn[i][j];
+d1=dday[i];
+d2=rtime [j];
+}
+if(min>p[i][j])
+{
+min=p[i][j];
+d3=dday[i];
+d4=rtime[j];
+}
+}
+}
+System. out.print(" The most popular train "+d1+"at"+d2+"with"+max+"passengers ");
+int A1=pn[0][0]+pn[1][0]+pn[2][0];
+int A2=pn[0][1]+pn[1][1]+pn[2][1];
+if(A1>A2)
+System.out.print (" The 06.04 train is more popular than the 09.04 train");
+else if(A1<A2)
+System.out.print("The 09.04 train is more popular than the 06.04 train");
+else
+System.out.print ("The 06.04train is equal to the 09.04 train");
+if(pn[0][0]>pn[1][0])
+System.out.print("The 06.04 train on Monday is more popular than the 06.04 train on Tuesday ");
+else if(pn[0][0]<pn[1][0])
+System.out.print(" The 06.04 train on Tuesday is more popular than the 06.04 train on Monday ");
+else
+System.out.print(" The 06.04 train on Monday and Tuesday are equally popular");
+for(int i=0;i<3;i++)
+{
+for(int j=0;j<5;j++)
+{System.out.print("The" +rtime[j]+"train on" +dday[i]+"have below 50 passengers ");
+}
+}
+}
+int x1=pn[0][2]+pn[1][2]+pn[2][2];
+J=x1/3;
+System.out print(" The average number of passengers travelling on 12.04 train over the three days is"+J);
+break;
+case2:
+System.exit (0);
+break;
+default: System.out.print("Invalid");
+}
+}
+}
